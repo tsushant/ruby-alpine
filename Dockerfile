@@ -1,7 +1,7 @@
-FROM ruby:2.6-alpine3.8
+FROM ruby:3.0.1-alpine3.13
 
 RUN apk add --update openssh
 
-RUN gem install capistrano -v 3.11.0
+RUN gem install capistrano -v 3.16.0
 RUN gem install dotenv
 RUN gem install slackistrano
